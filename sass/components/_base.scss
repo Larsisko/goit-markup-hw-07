@@ -1,0 +1,46 @@
+@import "./modern-normalize.css";
+* {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+h2 {
+  @extend %h2;
+}
+body {
+  font: color #212121;
+  background-color: var(--section-color);
+}
+
+.container {
+  width: 1200px;
+
+  margin: 0px 215px;
+}
+.section {
+  padding: 94px 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+ul:nth-first-child {
+  margin-left: 0px;
+}
+ul:nth-last-child {
+  margin-right: 0px;
+}

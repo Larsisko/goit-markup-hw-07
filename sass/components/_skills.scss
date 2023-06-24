@@ -1,0 +1,26 @@
+.lorem {
+  &__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  &__item {
+    width: 270px;
+  }
+  &__icon {
+    background-color: var(--future-background);
+    width: 270px;
+    height: 120px;
+    padding: 25px 100px;
+    margin-bottom: 30px;
+  }
+  &__title {
+    @include font(normal, 700, 14px, 1.14, 0.03em);
+    text-transform: uppercase;
+  }
+  &__description {
+    @include font(normal, 400, 14px, 2, 0.03em);
+    margin-top: 10px;
+  }
+}
