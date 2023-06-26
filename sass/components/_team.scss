@@ -10,6 +10,8 @@
     padding: 30px 32px;
   }
   &__name {
+    display: flex;
+    justify-content: center;
     @include font(normal, 500, 16px, 1.2, 0.03em);
   }
   &__description {
@@ -34,5 +36,10 @@
     transition-property: fill;
     @include transition(background-color);
     border-radius: 50%;
+    &:hover,
+    &focus {
+      background: var(--hover-color);
+      fill: var(--hover-icon-color-team);
+    }
   }
 }

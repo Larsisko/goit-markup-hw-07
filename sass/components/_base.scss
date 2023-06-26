@@ -19,16 +19,19 @@ p {
 }
 h2 {
   @extend %h2;
+  margin-bottom: 50px;
 }
 body {
+  max-width: 100%, 1600px;
   font: color #212121;
   background-color: var(--section-color);
+  overflow-x: hidden;
 }
 
 .container {
   width: 1200px;
 
-  margin: 0px 215px;
+  margin: 0px 10%;
 }
 .section {
   padding: 94px 0;
@@ -43,4 +46,21 @@ ul:nth-first-child {
 }
 ul:nth-last-child {
   margin-right: 0px;
+}
+li {
+  list-style-type: none;
+}
+figure {
+  margin: 0 auto;
+}
+a {
+  color: #212121;
+  text-decoration: inherit;
+  transition: color 250ms var(--cubic-bezier);
+}
+footer {
+  background-color: var(--other-section-color);
+  color: #ffffff;
+  width: 1600px;
+  height: 252px;
 }

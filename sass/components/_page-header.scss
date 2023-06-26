@@ -8,12 +8,12 @@
     @include flex(flex, space-between, center);
     flex-direction: row;
 
-    gap: 94px;
+    // gap: 94px;
     list-style-type: none;
     height: 100%;
   }
   &__navigation {
-    @include flex(flex, flex-end, center);
+    @include flex(flex, flex-start, center);
     list-style-type: none;
     flex-direction: row;
   }
@@ -67,7 +67,7 @@
   @include flex(flex, flex-end, center);
   flex-direction: row;
   gap: 30px;
-  padding: 0 0 0 345px;
+  padding: 0 auto;
   padding-inline-start: 0;
   &__tel,
   &__mail {
